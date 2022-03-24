@@ -1,0 +1,1992 @@
+$color-1Purple: #6e3f8d;
+$color-2Purple: #744d8c;
+$color-lightPurple: #e8dcf2;
+$color-Yellow: #f2b304;
+$color-Orange: #ce7b00;
+$color-Blue: #2b82a8;
+$color-lightGrey: #e8e8e8;
+$color-Black: #3b3b3b;
+
+// $color-gradation: transparent
+//   linear-gradient(221deg, #6e3f8d 0%, #6e3f8d 14%, #744d8c 35%, #f2c204 100%) 0%
+//   0% no-repeat padding-box;
+
+$color-gradient: linear-gradient(45deg, $color-Yellow, $color-1Purple 70%);
+
+$box-shadow: 5px 5px 5px #00000029;
+$box-shadow-inset: inset 0px 0px 10px #ffffff71;
+$box-shadow-insetClick: inset 0px 0px 10px #66666691;
+
+@mixin backColor {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+.hidden {
+  display: none;
+}
+.develope {
+  color: rgb(141, 0, 0);
+}
+
+.home {
+  header {
+    height: 500px;
+    width: 100%;
+    background: #6e3f8d;
+    position: relative;
+    div {
+      position: absolute;
+      color: white;
+      z-index: 5;
+      margin: auto;
+      top: 200px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+      font-weight: 600;
+      cursor: none;
+    }
+    span {
+      top: 270px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      color: white;
+      z-index: 5;
+      margin: auto;
+      font-size: 100px;
+      transition: all 0.2s;
+    }
+    .colorChange {
+      color: lightgrey;
+    }
+  }
+  header::before {
+    content: "";
+    background-image: url("./img/friendship-geb3529827_1920.jpg");
+    background-size: cover;
+    opacity: 0.65;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 500px;
+  }
+  .back1 {
+    height: 750px;
+    width: 100%;
+    background-color: #f2c204;
+    position: relative;
+    display: flex;
+    .box1 {
+      background-color: $color-lightGrey;
+      position: absolute;
+      width: 80vw;
+      border-radius: 5px;
+      right: 0;
+      top: -20px;
+      height: 200px;
+      box-shadow: $box-shadow;
+    }
+    .box1-1-frame {
+      right: 5vw;
+      top: -70px;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      .box1-1 {
+        margin-right: 5px;
+        width: 200px;
+        cursor: pointer;
+        .orange {
+          background-color: $color-Orange;
+        }
+        .purple {
+          background-color: $color-2Purple;
+        }
+        .blue {
+          background-color: $color-Blue;
+        }
+        .top {
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          height: 220px;
+          padding-top: 120px;
+          box-shadow: $box-shadow;
+          position: relative;
+          span {
+            position: absolute;
+            z-index: 5;
+            right: 23%;
+          }
+        }
+        .orange::before {
+          content: "";
+          background-image: url("./img/drinks-g196571e25_1920.jpg");
+          background-size: cover;
+          opacity: 0.1;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          height: 220px;
+          width: 200px;
+          border-radius: 5px;
+        }
+        .purple::before {
+          content: "";
+          background-image: url("./img/people-g616738467_1920.jpg");
+          background-size: cover;
+          opacity: 0.1;
+          position: absolute;
+          top: 0px;
+          left: 205px;
+          right: 0px;
+          bottom: 0px;
+          height: 220px;
+          width: 200px;
+          border-radius: 5px;
+        }
+        .blue::before {
+          content: "";
+          background-image: url("./img/team-gf9694f70d_1920.jpg");
+          background-size: cover;
+          opacity: 0.1;
+          position: absolute;
+          top: 0px;
+          left: 410px;
+          right: 0px;
+          bottom: 0px;
+          height: 220px;
+          width: 200px;
+          border-radius: 5px;
+        }
+        .bright::before {
+          opacity: 0.5;
+          transition: all 0.5s;
+        }
+        .bottom {
+          height: 5px;
+          margin-top: 10px;
+          border-radius: 10px;
+          box-shadow: $box-shadow;
+        }
+      }
+    }
+    .box2 {
+      background-color: $color-2Purple;
+      width: 700px;
+      border-radius: 5px;
+      height: 250px;
+      bottom: 0px;
+      margin: auto;
+      display: flex;
+      position: relative;
+      box-shadow: $box-shadow;
+      .box2-1-frame {
+        margin: auto;
+        display: flex;
+        position: absolute;
+        top: 25px;
+        left: -80px;
+        .box2-1 {
+          border-radius: 5px;
+          background-color: $color-Black;
+          margin-right: 5px;
+          font-size: 15px;
+          color: white;
+          width: 300px;
+          height: 200px;
+          display: flex;
+          box-shadow: $box-shadow;
+          cursor: pointer;
+          ul {
+            z-index: 5;
+            margin: auto;
+            li {
+            }
+            .title {
+            }
+            .field {
+              margin-top: 35px;
+              font-weight: bold;
+            }
+          }
+        }
+        .first::before {
+          content: "";
+          background-image: url("./img/people-g9e2eac3f7_1920.jpg");
+          background-size: cover;
+          opacity: 0.5;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          width: 300px;
+          height: 200px;
+          border-radius: 5px;
+        }
+        .second::before {
+          content: "";
+          background-image: url("./img/team-g395942733_1920.jpg");
+          background-size: cover;
+          opacity: 0.5;
+          position: absolute;
+          top: 0px;
+          left: 305px;
+          right: 0px;
+          bottom: 0px;
+          width: 300px;
+          height: 200px;
+          border-radius: 5px;
+        }
+        .third::before {
+          content: "";
+          background-image: url("./img/startup-g500b59503_1920.jpg");
+          background-size: cover;
+          opacity: 0.5;
+          position: absolute;
+          top: 0px;
+          left: 610px;
+          right: 0px;
+          bottom: 0px;
+          width: 300px;
+          height: 200px;
+          border-radius: 5px;
+        }
+        .bright::before {
+          opacity: 0.8;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .back2 {
+    height: 500px;
+    width: 100%;
+    background-color: #e8e8e8;
+    position: relative;
+    .box {
+      border-radius: 5px;
+      height: 350px;
+      width: 75vw;
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      box-shadow: $box-shadow;
+      .img {
+        background-image: url("./img/students-g72bb70bff_1920.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 45%;
+        border-radius: 5px 0 0 5px;
+      }
+      .text {
+        background: $color-gradient;
+        height: 100%;
+        width: 55%;
+        border-radius: 0 5px 5px 0;
+        text-align: right;
+        padding: 50px 20px;
+        p {
+          padding: 10px;
+        }
+        .first {
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .second {
+          font-size: 15px;
+        }
+        .third {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  background-color: #6e3f8d;
+  height: 100vh;
+  display: flex;
+  .login-frame {
+    margin: auto;
+    z-index: 5;
+    background: $color-gradient;
+    height: 650px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    display: flex;
+    box-shadow: $box-shadow-inset, $box-shadow;
+    .box {
+      margin: auto;
+      height: 80%;
+      width: 80%;
+      // background-color: #2b82a8;
+      span {
+        display: block;
+        margin: 30px;
+      }
+      .title {
+        color: white;
+        font-weight: bold;
+        font-size: 35px;
+      }
+      .text {
+        color: $color-Black;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .btns {
+        margin-top: 20%;
+        div {
+          border-radius: 5px;
+          margin: 10px auto;
+          width: 75%;
+          cursor: pointer;
+          box-shadow: $box-shadow;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.login::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+}
+
+.chatroom {
+  background-color: #6e3f8d;
+  height: 80vh;
+  display: flex;
+  .frame {
+    z-index: 5;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    margin: 125px auto;
+    height: 500px;
+    width: 80vw;
+    background-color: $color-lightGrey;
+    display: flex;
+    .info {
+      margin: 10px;
+      width: 20%;
+      padding-top: 25px;
+      .profile {
+        margin: auto;
+        background-color: $color-Yellow;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 5px;
+        }
+        img {
+          width: 90%;
+          display: block;
+          margin: 15px auto;
+          margin-bottom: 5px;
+          border-radius: 5px;
+          box-shadow: $box-shadow;
+        }
+      }
+      .group-list {
+        text-align: left;
+        // background-color: #ce7b00;
+        margin-top: 50px;
+        margin: auto 0;
+        width: 100%;
+        // padding: 10px;
+        padding-top: 50px;
+        .title {
+          margin: 10px;
+        }
+        .group {
+          text-align: left;
+          margin: 10px 0;
+          background-color: $color-2Purple;
+          display: block;
+          box-shadow: $box-shadow;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: 13px;
+          color: white;
+          cursor: pointer;
+          position: relative;
+          span {
+          }
+          .name {
+          }
+          .field {
+            font-weight: bold;
+          }
+          span {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: $color-Orange;
+            border-radius: 5px;
+            color: white;
+            font-size: 13px;
+            width: 40px;
+            height: 20px;
+            box-shadow: $box-shadow;
+            bottom: 10px;
+            right: 10px;
+          }
+        }
+      }
+    }
+    .chat-frame {
+      background-color: $color-2Purple;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      .top {
+        height: 90%;
+        display: flex;
+        .chatbox {
+          background-color: #3b3b3b9a;
+          // opacity: 0.8;
+          width: 85%;
+          border-radius: 5%;
+          box-shadow: $box-shadow;
+          display: flex;
+          .chat {
+            width: 100%;
+            padding: 10px;
+            opacity: 1;
+            z-index: 5;
+            color: white;
+            .title {
+              margin: 15px auto;
+            }
+            .one {
+              display: flex;
+              font-size: 13px;
+              width: 100%;
+              margin: 5px auto;
+              height: 35px;
+              .text {
+                background-color: #3b3b3be3;
+                border-radius: 5px;
+                padding: 10px 15px;
+                margin: auto 10px;
+                height: 100%;
+              }
+              img {
+                width: 35px;
+                border-radius: 5px;
+              }
+            }
+
+            .my {
+              justify-content: end;
+            }
+            .your {
+              justify-content: start;
+            }
+          }
+        }
+        .btns {
+          width: 15%;
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          button {
+            margin-top: 10px;
+            border: none;
+            background-color: $color-Yellow;
+            border-radius: 5px;
+            color: white;
+            font-size: 13px;
+            width: 80px;
+            height: 30px;
+            box-shadow: $box-shadow;
+          }
+        }
+      }
+      .bottom {
+        margin-top: 10px;
+        height: 10%;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input {
+          border-radius: 5px;
+          width: 85%;
+          border: 1px $color-Black solid;
+          padding: 5px;
+          font-size: 15px;
+          height: 35px;
+        }
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: $color-Black;
+          font-size: 15px;
+          width: 60px;
+          height: 35px;
+          box-shadow: $box-shadow;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.chatroom::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80vh;
+}
+
+.mypage {
+  background-color: #6e3f8d;
+  height: 1250px;
+  display: flex;
+  .frame {
+    z-index: 5;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    margin: 125px auto;
+    height: 900px;
+    width: 800px;
+    background-color: $color-lightGrey;
+    .info {
+      margin: 10px;
+      height: 250px;
+      display: flex;
+      .profile {
+        width: 30%;
+        img {
+          width: 200px;
+          display: block;
+          margin: auto;
+          border-radius: 5px;
+          box-shadow: $box-shadow;
+        }
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: white;
+          font-size: 13px;
+          width: 150px;
+          height: 30px;
+          box-shadow: $box-shadow;
+          margin-top: 10px;
+        }
+      }
+      .myinfo {
+        width: 70%;
+        background-color: $color-Black;
+        border-radius: 5px;
+        opacity: 0.8;
+        display: flex;
+        box-shadow: $box-shadow;
+        .text {
+          z-index: 5;
+          margin: auto 20px;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          table {
+            margin: auto 30px;
+            tr {
+              font-size: 15px;
+              td {
+                line-height: 85%;
+              }
+              .title {
+                height: 20px;
+                color: white;
+              }
+              .info {
+                background-color: white;
+                border-radius: 5px;
+                height: 25px;
+                padding: 5px;
+                width: 250px;
+                box-shadow: $box-shadow;
+              }
+            }
+          }
+        }
+      }
+    }
+    .group {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 10px;
+      font-size: 15px;
+      .schedule {
+        .title {
+          margin: 10px 0;
+        }
+        .box {
+          width: 250px;
+          padding: 10px;
+          .m-frame {
+            .group-frame {
+              margin: auto;
+              text-align: left;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 10px auto;
+              .date {
+                font-size: 13px;
+                margin-right: 10px;
+              }
+              .group {
+                width: 250px;
+                margin: 0;
+                background-color: $color-1Purple;
+                display: block;
+                box-shadow: $box-shadow;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 13px;
+                cursor: pointer;
+                span {
+                }
+                .name {
+                }
+                .field {
+                }
+              }
+              .group:active {
+                box-shadow: $box-shadow-insetClick;
+                margin-left: 2px;
+              }
+            }
+          }
+        }
+      }
+      .join {
+        .title {
+          margin: 10px 0;
+        }
+        .box {
+          width: 250px;
+          text-align: left;
+          padding: 10px;
+          .group {
+            background-color: $color-Yellow;
+            display: block;
+            border-radius: 5px;
+            box-shadow: $box-shadow;
+            margin: 0;
+            margin-top: 10px;
+            padding: 10px;
+            color: black;
+            cursor: pointer;
+            .name {
+              margin-bottom: 5px;
+            }
+            .field {
+              font-weight: bold;
+            }
+          }
+          .group:active {
+            box-shadow: $box-shadow-insetClick;
+            margin-left: 2px;
+          }
+        }
+      }
+      .bookmark {
+        .title {
+          margin: 10px 0;
+        }
+        .box {
+          width: 250px;
+          text-align: left;
+          // height: 500px;
+          padding: 10px;
+          .group {
+            background-color: #2b82a8;
+            display: block;
+            border-radius: 5px;
+            box-shadow: $box-shadow;
+            margin: 0;
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+            .name {
+              margin-bottom: 5px;
+            }
+          }
+          .group:active {
+            box-shadow: $box-shadow-insetClick;
+            margin-left: 2px;
+          }
+        }
+      }
+      .box {
+        background-color: $color-Black;
+        border-radius: 5px;
+        opacity: 0.8;
+        box-shadow: $box-shadow;
+        color: white;
+      }
+    }
+    .recommend {
+      margin: 50px 10px;
+      text-align: left;
+      .title {
+        margin: 10px 20px;
+      }
+      .box {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .group {
+          width: 180px;
+          height: 75px;
+          background-color: $color-Orange;
+          display: block;
+          border-radius: 5px;
+          box-shadow: $box-shadow;
+          margin: 0;
+          padding: 10px;
+          cursor: pointer;
+          .name {
+            margin-bottom: 5px;
+          }
+          .field {
+            font-weight: bold;
+          }
+        }
+        .group:active {
+          box-shadow: $box-shadow-insetClick;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+.mypage::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1250px;
+}
+
+.post {
+  background-color: #6e3f8d;
+  height: 1000px;
+  display: flex;
+  .post-box {
+    z-index: 5;
+    margin: 100px auto;
+    background-color: $color-lightGrey;
+    height: 800px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    .top {
+      width: 85%;
+      margin: 50px auto;
+      justify-content: space-evenly;
+      .tag {
+        width: 60%;
+        margin: auto;
+        .btn {
+          width: 50%;
+          button {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            width: 150px;
+            height: 35px;
+            box-shadow: $box-shadow-inset, $box-shadow;
+            margin: 10px;
+            background-color: $color-Yellow;
+            transition: all 0.2s;
+          }
+          .btnClick {
+            box-shadow: $box-shadow-insetClick;
+            margin-right: 6px;
+            margin-bottom: 10px;
+            background-color: $color-Orange;
+            color: white;
+            font-weight: normal;
+          }
+        }
+      }
+      .head {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .title {
+          span {
+            display: block;
+          }
+          .first {
+            font-size: 20px;
+          }
+          .second {
+            font-weight: 600;
+          }
+        }
+        .search {
+          position: relative;
+          input {
+            border: none;
+            border-radius: 5px;
+            height: 35px;
+            width: 250px;
+            padding: 10px;
+            padding-right: 30px;
+            box-shadow: 2px 2px 2px #00000029;
+          }
+          label {
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+          }
+        }
+      }
+    }
+    .contents {
+      table {
+        width: 95%;
+        margin: auto;
+        hr {
+          margin: 0;
+        }
+        tr {
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          td {
+            width: 100%;
+            padding: 5px;
+          }
+          .no {
+            font-size: 13px;
+            width: 5%;
+          }
+          .title {
+            width: 55%;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          .id {
+            width: 20%;
+          }
+          .date {
+            font-size: 15px;
+            width: 20%;
+          }
+        }
+        .head {
+          font-weight: 500;
+        }
+        .content {
+          .no {
+            color: $color-Black;
+          }
+          .date {
+            color: $color-Black;
+          }
+        }
+      }
+    }
+    .bottom {
+      position: relative;
+      width: 95%;
+      margin: auto;
+      .btns {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        button {
+          border: none;
+          background-color: inherit;
+          margin: 5px;
+          font-size: 15px;
+        }
+      }
+      .writeBtn {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        border: none;
+        background-color: $color-1Purple;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        width: 100px;
+        height: 30px;
+        box-shadow: $box-shadow-inset, $box-shadow;
+      }
+      .writeBtn:active {
+        top: 4px;
+        right: 7px;
+        box-shadow: $box-shadow-insetClick;
+      }
+    }
+  }
+}
+
+.post::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1000px;
+}
+
+.writepost {
+  background-color: #6e3f8d;
+  height: 1000px;
+  display: flex;
+  .writepost-box {
+    z-index: 5;
+    margin: 100px auto;
+    background-color: $color-lightGrey;
+    height: 800px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    form {
+      width: 90%;
+      margin: 25px auto;
+      .input-box {
+        background-color: white;
+        border-radius: 5px;
+        hr {
+          width: 95%;
+          margin: auto;
+        }
+        input {
+          border-radius: 5px;
+          width: 100%;
+          border: none;
+          padding: 10px 30px;
+          margin: 10px auto;
+          margin-top: 25px;
+          font-size: 25px;
+        }
+        textarea.content {
+          font-size: 15px;
+          border-radius: 5px;
+          width: 100%;
+          border: none;
+          padding: 10px 30px;
+          margin: 10px auto;
+          resize: none;
+          white-space: pre-line;
+        }
+
+        input::placeholder {
+          font-size: 25px;
+        }
+        textarea::placeholder {
+          font-size: 15px;
+        }
+      }
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        button {
+          margin-right: 3px;
+          display: block;
+          border: none;
+          background-color: $color-1Purple;
+          border-radius: 5px;
+          color: white;
+          font-size: 13px;
+          width: 100px;
+          height: 30px;
+          box-shadow: $box-shadow-inset, $box-shadow;
+        }
+        button:active {
+          margin-right: 0;
+          margin-top: 3px;
+          box-shadow: $box-shadow-insetClick;
+        }
+      }
+    }
+  }
+}
+.writepost::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1000px;
+}
+
+.group-make {
+  background-color: #6e3f8d;
+  height: 1000px;
+  display: flex;
+  .group-make-box {
+    z-index: 5;
+    margin: 100px auto;
+    background-color: $color-lightGrey;
+    height: 675px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    form {
+      margin: 50px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: $box-shadow;
+      padding: 20px 0;
+      table {
+        tr {
+          padding: 20px;
+          td {
+            padding: 10px;
+            input.title {
+              border-radius: 5px;
+              font-size: 15px;
+              border: solid 1px $color-Black;
+            }
+            input.title {
+              width: 95%;
+            }
+            input:focus {
+              outline: none;
+            }
+            textarea {
+              font-size: 15px;
+              width: 95%;
+              padding: 10px 20px;
+              margin: 10px auto;
+              resize: none;
+              border-radius: 5px;
+              border: solid 1px $color-Black;
+            }
+            textarea:focus {
+              outline: none;
+            }
+            select {
+              border-radius: 5px;
+              font-size: 15px;
+              border: solid 1px $color-Black;
+            }
+            .btn {
+              width: 100%;
+              text-align: end;
+              height: 65px;
+              button {
+                margin-right: 50px;
+                margin-left: 5px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: $color-Yellow;
+                font-size: 15px;
+                width: 90px;
+                height: 35px;
+                box-shadow: 2px 2px 2px #00000029;
+                color: white;
+              }
+              button:active {
+                margin-right: 48px;
+                margin-top: 12px;
+                box-shadow: $box-shadow-insetClick;
+              }
+            }
+          }
+          .first {
+            font-size: 16px;
+          }
+          .radio {
+            label {
+              margin-right: 20px;
+            }
+          }
+        }
+        hr {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.group-make::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1000px;
+}
+
+.postdetail {
+  background-color: #6e3f8d;
+  // height: 1200px;
+  display: flex;
+  .postdetail-box {
+    z-index: 5;
+    margin: 100px auto;
+    background-color: $color-lightGrey;
+    // height: 800px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    text-align: left;
+    hr {
+      margin: 0 auto;
+    }
+    .content {
+      background-color: white;
+      border-radius: 5px;
+      padding: 25px;
+      height: 800px;
+      .title {
+        font-size: 25px;
+        margin: 20px 0 10px 0;
+      }
+      .postinfo {
+        span {
+          margin-right: 10px;
+          font-size: 13px;
+        }
+        .date {
+          color: $color-Black;
+        }
+      }
+      .content-box {
+        height: 700px;
+      }
+      hr {
+        margin: 20px 0 20px 0;
+      }
+      p {
+        white-space: pre-line;
+      }
+      .btns {
+        margin-top: 500px;
+        height: 40px;
+        display: flex;
+        justify-content: right;
+        div {
+          width: 60px;
+          button {
+            margin-left: 5px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            width: 50px;
+            height: 30px;
+            box-shadow: 2px 2px 2px #00000029;
+          }
+          button:active {
+            box-shadow: $box-shadow-insetClick;
+            margin-left: 7px;
+            margin-top: 12px;
+          }
+          .update {
+            background-color: $color-Yellow;
+            color: white;
+          }
+          .delete {
+            background-color: $color-lightGrey;
+          }
+        }
+      }
+    }
+    .comments {
+      padding: 10px 0;
+      .comment {
+        padding: 5px 15px;
+        hr {
+          // margin: ;
+        }
+        span {
+          margin-right: 5px;
+          font-size: 15px;
+        }
+        .id {
+          font-weight: bold;
+        }
+        .date {
+          color: $color-Black;
+        }
+      }
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      textarea {
+        font-size: 15px;
+        width: 95%;
+        border: none;
+        padding: 10px 30px;
+        margin: 10px auto;
+        resize: none;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+      }
+      textarea:focus {
+        outline: none;
+      }
+      textarea::placeholder {
+        font-size: 15px;
+      }
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        button {
+          display: block;
+          border: none;
+          background-color: $color-1Purple;
+          border-radius: 5px;
+          color: white;
+          font-size: 13px;
+          width: 100px;
+          height: 30px;
+          box-shadow: $box-shadow-inset, $box-shadow;
+          margin-bottom: 2px;
+          margin-right: 2px;
+        }
+        button:active {
+          box-shadow: $box-shadow-insetClick;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.postdetail::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  // height: 200%;
+  height: 100vh;
+}
+
+.App {
+  .nav {
+    transition: all 0.5s;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 10;
+    font-size: 17px;
+    ul {
+      margin-right: 40px;
+      list-style: none;
+      li {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+    .title {
+      font-weight: bold;
+      font-size: 25px;
+    }
+  }
+  .navBack {
+    background-color: $color-1Purple;
+    font-size: 15px;
+  }
+  // ********* 신청
+  .attend-modal {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    .frame {
+      position: relative;
+      background-color: $color-lightGrey;
+      border-radius: 5px;
+      margin: auto;
+      width: 325px;
+      height: 200px;
+      padding: 50px;
+      .x {
+        border: none;
+        position: absolute;
+        background-color: inherit;
+        top: 15px;
+        right: 20px;
+      }
+      div.attend {
+        font-size: 20px;
+      }
+      .btns {
+        margin-top: 20px;
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          width: 80px;
+          height: 30px;
+          box-shadow: $box-shadow;
+          margin: 10px;
+        }
+        .cancel {
+          background-color: $color-Black;
+        }
+      }
+    }
+  }
+  .attend-modal2 {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    .frame {
+      position: relative;
+      background-color: $color-lightGrey;
+      border-radius: 5px;
+      margin: auto;
+      width: 325px;
+      height: 185px;
+      padding: 35px;
+      .x {
+        border: none;
+        position: absolute;
+        background-color: inherit;
+        top: 15px;
+        right: 20px;
+      }
+      div.attend {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .btns {
+        margin-top: 20px;
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          width: 80px;
+          height: 30px;
+          box-shadow: $box-shadow;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .accept-modal {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    .frame {
+      position: relative;
+      background-color: $color-lightGrey;
+      border-radius: 5px;
+      margin: auto;
+      width: 400px;
+      padding: 25px;
+      .x {
+        border: none;
+        position: absolute;
+        background-color: inherit;
+        top: 15px;
+        right: 20px;
+      }
+      div.group-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .member {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .list {
+          ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+              margin: 5px;
+            }
+            .nick {
+              font-weight: bold;
+            }
+          }
+        }
+
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: white;
+          font-size: 13px;
+          width: 55px;
+          height: 25px;
+          box-shadow: $box-shadow;
+          margin: 5px;
+        }
+        .delete {
+          background-color: $color-Black;
+        }
+      }
+    }
+  }
+  .accept-modal2 {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    .frame {
+      position: relative;
+      background-color: $color-lightGrey;
+      border-radius: 5px;
+      margin: auto;
+      width: 400px;
+      padding: 25px;
+      .x {
+        border: none;
+        position: absolute;
+        background-color: inherit;
+        top: 15px;
+        right: 20px;
+      }
+      .btn {
+        border: none;
+        background-color: $color-Black;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        width: 55px;
+        height: 25px;
+        box-shadow: $box-shadow;
+        margin: 5px;
+      }
+      .ok {
+        background-color: $color-Yellow;
+      }
+    }
+  }
+  footer {
+    background-color: $color-1Purple;
+    color: white;
+    padding: 50px;
+    .link {
+      font-size: 13px;
+      margin-bottom: 30px;
+      a {
+        margin: 0 15px;
+      }
+    }
+    .sentences {
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+    .snsBtns {
+      display: flex;
+      justify-content: center;
+    }
+    .sns {
+      margin: 0 15px;
+    }
+  }
+}
+.faq {
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  .faq-box {
+    padding-top: 30px;
+    z-index: 5;
+    margin: 50px auto;
+    background-color: $color-lightGrey;
+    height: 1000px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    .top {
+      width: 85%;
+      margin: 50px auto;
+      justify-content: space-evenly;
+      .tag {
+        button {
+          border: none;
+          background-color: $color-Yellow;
+          border-radius: 5px;
+          color: white;
+          font-size: 13px;
+          width: 150px;
+          height: 30px;
+          box-shadow: $box-shadow-inset, $box-shadow;
+          margin: 10px;
+        }
+      }
+      .head {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .title {
+          span {
+            display: block;
+          }
+          .first {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .contents {
+      table {
+        width: 95%;
+        padding-top: 100px;
+        margin: auto;
+        margin-top: 10px;
+        hr {
+          margin: 0;
+        }
+        tr {
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          td {
+            width: 100%;
+            padding: 5px;
+          }
+          .title {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+        .head {
+          margin: 10px;
+        }
+        .content {
+          .no {
+            color: $color-Black;
+          }
+          .date {
+            color: $color-Black;
+          }
+        }
+      }
+    }
+    .bottom {
+      position: relative;
+      width: 95%;
+      margin: auto;
+      .serviceCenter {
+        position: relative;
+        text-align: center;
+      }
+    }
+  }
+}
+.GroupInfCheck {
+  background-color: #6e3f8d;
+  height: 1500px;
+  display: flex;
+  .frame {
+    z-index: 5;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    margin: 100px auto;
+    height: 1300px;
+    width: 800px;
+    background-color: $color-lightGrey;
+    .info {
+      margin: 10px;
+      height: 250px;
+      display: flex;
+      .profile {
+        width: 30%;
+        img {
+          width: 200px;
+          display: block;
+          margin: auto;
+          border-radius: 5px;
+          box-shadow: $box-shadow;
+        }
+        .btns {
+          // background-color: #22b8cf;
+          height: 40px;
+          button {
+            border: none;
+            background-color: $color-Yellow;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            width: 150px;
+            height: 30px;
+            box-shadow: $box-shadow;
+            margin-top: 0px;
+            margin-right: 3px;
+          }
+          button:active {
+            box-shadow: $box-shadow-insetClick;
+            margin-top: 2px;
+            margin-right: 0;
+          }
+        }
+      }
+      .myinfo {
+        width: 70%;
+        background-color: $color-Black;
+        border-radius: 5px;
+        opacity: 0.8;
+        display: flex;
+        box-shadow: $box-shadow;
+        .text {
+          z-index: 5;
+          // background-color: #2b82a8;
+          margin: auto 20px;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          table {
+            margin: auto 30px;
+            tr {
+              font-size: 15px;
+              td {
+                line-height: 85%;
+              }
+              .title {
+                height: 20px;
+                color: white;
+              }
+              .info {
+                background-color: white;
+                border-radius: 5px;
+                height: 25px;
+                padding: 5px;
+                width: 250px;
+                box-shadow: $box-shadow;
+              }
+            }
+          }
+        }
+      }
+    }
+    .group {
+      // display: flex;
+      // justify-content: space-between;
+      margin: 50px 10px;
+      font-size: 15px;
+      .title {
+        margin: 10px 0;
+      }
+      .chat {
+        .box {
+          .commentbox {
+            background-color: rgba(211, 211, 211, 0.295);
+            border-radius: 5px;
+            overflow-y: scroll;
+            height: 500px;
+            .comment {
+              text-align: left;
+              padding: 10px;
+              hr {
+                margin: 0;
+              }
+            }
+          }
+        }
+        .chat {
+          width: 100%;
+          display: block;
+          border-radius: 5px;
+          margin: 0;
+          margin-top: 10px;
+
+          form {
+            textarea {
+              font-size: 15px;
+              border-radius: 5px;
+              width: 100%;
+              border: none;
+              padding: 10px 10px;
+              margin: 0 auto;
+              resize: none;
+              white-space: pre-line;
+            }
+            .btn {
+              width: 100%;
+              text-align: right;
+              height: 30px;
+              // background-color: #22b8cf;
+              padding: 0;
+              button {
+                border: none;
+                background-color: $color-Yellow;
+                border-radius: 5px;
+                color: white;
+                font-size: 15px;
+                width: 75px;
+                height: 30px;
+                box-shadow: $box-shadow;
+                margin-top: 0px;
+                margin-right: 3px;
+              }
+              button:active {
+                box-shadow: $box-shadow-insetClick;
+                margin-top: 2px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .box {
+        width: 100%;
+        padding: 10px;
+        background-color: $color-Black;
+        border-radius: 5px;
+        opacity: 0.8;
+        box-shadow: $box-shadow;
+        color: white;
+        .m-frame {
+          .ym {
+            text-align: left;
+          }
+          .group-frame {
+            margin: auto;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            .date {
+              font-size: 13px;
+              margin-right: 10px;
+            }
+            .group {
+              margin: 0;
+              background-color: $color-1Purple;
+              display: block;
+              box-shadow: $box-shadow;
+              border-radius: 5px;
+              padding: 10px;
+              font-size: 13px;
+              cursor: pointer;
+              span {
+              }
+              .name {
+              }
+              .field {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.GroupInfCheck::before {
+  content: "";
+  background-image: url("./img/people-ga1056f790_1920.jpg");
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1500px;
+}
+.TodoTemplate {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .app-title {
+    background: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    background: $color-Black;
+    color: white;
+  }
+}
+.TodoInsert {
+  display: flex;
+  background: #495057;
+  input {
+    // 기본 스타일 초기화
+    background: none;
+    outline: none;
+    border: none;
+
+    line-height: 1.5;
+    color: white;
+    &::placeholder {
+      color: #dee2e6;
+    }
+    // 버튼을 제외한 영역을 모두 차지하기
+    flex: 1;
+  }
+  button {
+    // 기본 스타일 초기화
+    background: none;
+    outline: none;
+    border: none;
+    background: #868e96;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s background ease-in;
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}
+.TodoList {
+  overflow-y: auto;
+}
+.TodoListItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center; // 세로 중앙 정렬
+
+  .checkbox {
+    cursor: pointer;
+    flex: 1; // 차지할 수 있는 영역 모두 차지
+    display: flex;
+    align-items: center; // 세로 중앙 정렬
+    svg {
+      // 아이콘
+      font-size: 1.5rem;
+    }
+    .text {
+      margin-left: 0.5rem;
+      flex: 1; // 차지할 수 있는 영역 모두 차지
+    }
+    // 체크되었을 때 보여줄 스타일
+    &.checked {
+      svg {
+        color: #22b8cf;
+      }
+      .text {
+        color: #adb5bd;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    cursor: pointer;
+    &:hover {
+      color: #ff8787;
+    }
+  }
+
+  // 엘리먼트 사이사이에 테두리를 넣어줌
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}
